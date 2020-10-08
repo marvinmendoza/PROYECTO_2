@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="314.0" prefWidth="280.0" style="-fx-background-color: #d32f2f;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.menucontroller">
+   <children>
+      <Pane layoutX="16.0" layoutY="15.0" prefHeight="285.0" prefWidth="248.0" style="-fx-background-color: #212121;">
+         <children>
+            <Button fx:id="btnCliente" layoutX="63.0" layoutY="65.0" mnemonicParsing="false" onAction="#abrirCliente" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #4a148c; -fx-background-radius: 200;" text="Abrir TablaCliente" textFill="WHITE" />
+            <Button fx:id="btnProducto" layoutX="63.0" layoutY="130.0" mnemonicParsing="false" onAction="#abrirProducto" style="-fx-background-color: #4a148c; -fx-background-radius: 200;" text="Abrir TablaProducto" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="14.0" prefHeight="17.0" prefWidth="248.0" text="Sistema de Menu" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="-1.0" layoutY="37.0" prefHeight="7.0" prefWidth="248.0" style="-fx-background-color: #76ff03;" />
+            <Button fx:id="btnOrden" layoutX="63.0" layoutY="190.0" mnemonicParsing="false" onAction="#abrirOrden" style="-fx-background-color: #4a148c; -fx-background-radius: 200;" text="Abrir OrdenCompras" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.fxmldocumentcontroller">
+   <children>
+      <TextField fx:id="txtNit" layoutX="13.0" layoutY="107.0" />
+      <TextField fx:id="txtNombre" layoutX="9.0" layoutY="164.0" />
+      <TextField fx:id="txtDescripcion" layoutX="13.0" layoutY="238.0" />
+      <TextField fx:id="txttotal" layoutX="13.0" layoutY="308.0" />
+      <Label fx:id="LblNit" layoutX="21.0" layoutY="81.0" text="NIT:" />
+      <Label fx:id="LblNombre" layoutX="21.0" layoutY="139.0" text="NOMBRE:" />
+      <Label fx:id="LblDes" layoutX="25.0" layoutY="213.0" text="DESCRIPCION" />
+      <Label fx:id="LblMonto" layoutX="21.0" layoutY="278.0" text="MONTO DE LA ORDEN:" />
+      <Button fx:id="btnCrearOrden" layoutX="300.0" layoutY="347.0" mnemonicParsing="false" onAction="#crearOrdenCompra" text="CREAR ORDEN DE COMPRA" />
+      <TableView fx:id="TblOrdenComp" layoutX="167.0" layoutY="33.0" prefHeight="262.0" prefWidth="431.0">
+        <columns>
+          <TableColumn fx:id="ColIdOC" prefWidth="46.0" text="LOTE:" />
+          <TableColumn fx:id="ColNit" prefWidth="70.0" text="NIT:" />
+            <TableColumn fx:id="ColNombre" prefWidth="83.0" text="NOMBRE:" />
+            <TableColumn fx:id="ColDescripcion" prefWidth="150.0" text="DESCRIPCION:" />
+            <TableColumn fx:id="ColMonto" prefWidth="91.0" text="MONTO:" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtIdOrden" layoutX="13.0" layoutY="44.0" />
+      <Label fx:id="LblId" layoutX="21.0" layoutY="25.0" prefHeight="17.0" prefWidth="67.0" text="LOTE:" />
+   </children>
+</Pane>
